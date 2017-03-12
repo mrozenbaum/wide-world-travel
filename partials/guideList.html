@@ -1,0 +1,17 @@
+<h1>Guides!</h1>
+<!-- print out the array to the DOM -->
+<!-- ng-repeat means one thing in the collection -->
+<div ng-repeat="potato in guides">
+  <h4>{{potato.title}}</h4>
+  <h4>{{potato.type}}</h4>
+  <h4>{{potato.price}}</h4>
+
+</div>
+
+<div>
+<!-- ng-model has to be in an <input> -->
+<!-- ng-model takes info from partial and binds it to the controller -->
+  <input ng-model="newGuide.price">
+  <input ng-model="newGuide.type">
+
+</div>
